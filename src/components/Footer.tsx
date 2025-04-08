@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Instagram, Twitter, Facebook, Youtube } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   return (
@@ -8,12 +9,12 @@ const Footer: React.FC = () => {
       <div className="container px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-12">
           <div>
-            <div className="flex items-center gap-2 mb-4">
+            <Link to="/" className="flex items-center gap-2 mb-4">
               <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-weenify-purple to-weenify-blue flex items-center justify-center">
                 <span className="text-white font-bold text-lg">W</span>
               </div>
               <span className="text-xl font-display font-bold">Weenify</span>
-            </div>
+            </Link>
             <p className="text-gray-600 mb-4">
               The ultimate dropshipping product research tool for finding winning products.
             </p>
@@ -49,17 +50,17 @@ const Footer: React.FC = () => {
               <li><a href="#" className="text-gray-600 hover:text-weenify-purple transition-colors">Help Center</a></li>
               <li><a href="#" className="text-gray-600 hover:text-weenify-purple transition-colors">Product Updates</a></li>
               <li><a href="#" className="text-gray-600 hover:text-weenify-purple transition-colors">Tutorials</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-weenify-purple transition-colors">Community</a></li>
+              <li><Link to="/affiliate" className="text-gray-600 hover:text-weenify-purple transition-colors">Affiliate Program</Link></li>
             </ul>
           </div>
           
           <div>
             <h3 className="font-semibold text-lg mb-4">Legal</h3>
             <ul className="space-y-3">
-              <li><a href="#" className="text-gray-600 hover:text-weenify-purple transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-weenify-purple transition-colors">Terms of Service</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-weenify-purple transition-colors">Cookie Policy</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-weenify-purple transition-colors">GDPR</a></li>
+              <li><Link to="/legal" className="text-gray-600 hover:text-weenify-purple transition-colors">Privacy Policy</Link></li>
+              <li><Link to="/legal" className="text-gray-600 hover:text-weenify-purple transition-colors">Terms of Service</Link></li>
+              <li><Link to="/legal" className="text-gray-600 hover:text-weenify-purple transition-colors">Cookie Policy</Link></li>
+              <li><Link to="/legal" className="text-gray-600 hover:text-weenify-purple transition-colors">GDPR</Link></li>
             </ul>
           </div>
         </div>
