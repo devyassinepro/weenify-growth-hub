@@ -3,7 +3,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
-import { ArrowRight, CheckCircle, DollarSign, Users, Link, BarChart3, Calendar, CreditCard } from 'lucide-react';
+import { ArrowRight, CheckCircle, DollarSign, Users, Link, BarChart3, Calendar, CreditCard, Chrome } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
