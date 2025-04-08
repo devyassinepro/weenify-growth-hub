@@ -16,10 +16,10 @@ const CTA: React.FC = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-gradient rounded-full shadow-lg shadow-weenify-purple/20 hover:shadow-weenify-purple/40 text-base">
-              <Chrome className="mr-2 h-4 w-4" /> Install Chrome Extension
+              Try Free Trial
             </Button>
             <Button size="lg" variant="outline" className="rounded-full border-weenify-purple/30 text-base">
-              Watch Demo <ArrowRight className="ml-2 h-4 w-4" />
+              <Chrome className="mr-2 h-4 w-4" /> Install Chrome Extension
             </Button>
           </div>
           <div className="mt-8 flex items-center justify-center">

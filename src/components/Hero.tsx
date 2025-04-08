@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Chrome } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
@@ -17,10 +17,10 @@ const Hero: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mt-4 sm:mt-8 justify-center lg:justify-start">
               <Button size="lg" className="bg-gradient rounded-full shadow-lg shadow-weenify-purple/20 hover:shadow-weenify-purple/40 text-base">
-                Install Chrome Extension <ArrowRight className="ml-2 h-4 w-4" />
+                Try Free Trial
               </Button>
               <Button size="lg" variant="outline" className="rounded-full border-weenify-purple/30 text-base">
-                Watch Demo
+                <Chrome className="mr-2 h-4 w-4" /> Install Chrome Extension
               </Button>
             </div>
             <div className="flex items-center justify-center lg:justify-start mt-4 text-sm text-gray-500 gap-2">

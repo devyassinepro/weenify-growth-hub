@@ -1,28 +1,32 @@
 
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Search, TrendingUp, Chrome, Import } from 'lucide-react';
 
 const HowItWorks: React.FC = () => {
   const steps = [
     {
       number: "01",
-      title: "Install the Chrome Extension",
-      description: "Add Weenify to Chrome with one click and get instant access to all features."
+      title: "Analyze Competition",
+      description: "Identify what's working for other successful dropshipping stores in your niche.",
+      icon: <Search className="h-6 w-6 text-white" />
     },
     {
       number: "02",
       title: "Research Winning Products",
-      description: "Use our database and real-time analysis to find high-potential products."
+      description: "Use our extensive database to discover high-potential products with proven sales records.",
+      icon: <TrendingUp className="h-6 w-6 text-white" />
     },
     {
       number: "03",
-      title: "Analyze Competitors",
-      description: "Enter any Shopify store URL to see what products are selling best."
+      title: "Install Chrome Extension",
+      description: "Add Weenify to Chrome for seamless product research while browsing the web.",
+      icon: <Chrome className="h-6 w-6 text-white" />
     },
     {
       number: "04",
       title: "Import to Your Store",
-      description: "Add products to your Shopify store with one click and start selling."
+      description: "Add products to your Shopify store with one click and start selling immediately.",
+      icon: <Import className="h-6 w-6 text-white" />
     }
   ];
 
@@ -46,7 +50,7 @@ const HowItWorks: React.FC = () => {
               <div key={index} className="relative">
                 <div className="bg-white rounded-xl p-6 border border-gray-100 shadow-md relative z-10">
                   <div className="w-12 h-12 bg-gradient-to-br from-weenify-purple to-weenify-blue rounded-full flex items-center justify-center text-white font-bold mb-5">
-                    {step.number}
+                    {step.icon}
                   </div>
                   <h3 className="text-xl font-semibold mb-3">{step.title}</h3>
                   <p className="text-gray-600">{step.description}</p>
